@@ -1,0 +1,25 @@
+
+
+################################################################# printing stars...trading pair: data/BINANCE_ETHUSDT, 60 jan 2019 to feb 2022
+percentage cover: 60
+compounding: False
+take basic income: False
+
+percentage levels: 15 percentage cover: 60
+Net profit for jan is: 192822.85714285716 INR
+Net profit for feb is: 77129.14285714286 INR
+Net profit for mar is: 38564.57142857143 INR
+Net profit for apr is: 77129.14285714286 INR
+Net profit for may is: 192822.85714285716 INR
+Net profit for jun is: 19282.285714285714 INR
+Net profit for jul is: 19282.285714285714 INR
+Net profit for aug is: 57846.85714285714 INR
+Net profit for sep is: 19282.285714285714 INR
+Net profit for oct is: 38564.57142857143 INR
+Net profit for nov is: 19282.285714285714 INR
+Net profit for dec is: 0 INR
+total profit : 0
+Levels : 7
+CASH IN HAND : 651428.5714285714
+
+
