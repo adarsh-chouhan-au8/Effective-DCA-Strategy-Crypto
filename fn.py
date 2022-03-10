@@ -32,17 +32,6 @@ def get_dynamic_levels(percentage_cover,levels_percentage,price):
     levels.reverse() 
     return levels    
 
-        
-
-
-
-def buy_possible(low,high,levels):
-    for key in levels:
-        if key<low and key<high:
-            break
-        if key>=low and key<=high and levels[key]=='empty':
-            levels[key]='filled'
-    return False
 
 def plot_levels(levels):
     for level in levels:

@@ -3,11 +3,10 @@ from datetime import date
 from datetime import datetime
 
 
-test_month = 1  
+test_month = 1
 test_year = 2021
 
 
-testing = False
 debug = False
 compounding = False
 take_basic_income = False
@@ -122,11 +121,6 @@ for i in range(1000000):
                 break
             if value[0] >= low and value[0] <= high and levels[key][1] == 'empty':
                 levels[key][1] = 'filled'
-                # print(levels)
-                # print("buy order executed at " +
-                #       str(value[0]) + " ar "+str(datetime.fromtimestamp(time_stamp)))
-                # print("current profit"+str(profit*76))
-                # print("Trading unit"+str(Total_account_balance/(len(levels))))
 
                 if debug:
                     input("press enter to continue")
@@ -142,9 +136,6 @@ for i in range(1000000):
 
             if value[0] >= low and value[0] <= high and levels[key+1][1] == 'filled':
                 levels[key+1][1] = 'empty'
-                # print(levels)
-                # print("sell order executed at " +
-                #       str(value[0]) + " ar "+str(datetime.fromtimestamp(time_stamp)))
                 count += 1
 
                 trading_unit = Total_account_balance/(len(levels))
@@ -176,13 +167,11 @@ for i in range(1000000):
         if lev[1] == 'empty':
             cash_in_hand += Total_account_balance/(len(levels))
 
-
     print("\n")
     print("ROI: " +
           str(fn.roi(base_account, profit))+" %")
 
     print("Net profit: " + str(profit*76)+" INR")
-
 
     roughFile.write("total profit : " +
                     str((Total_account_balance-base_account)*76)+"\n")
@@ -190,8 +179,6 @@ for i in range(1000000):
     roughFile.write("CASH IN HAND : "+str(cash_in_hand*76)+"\n")
     roughFile.write("\n")
     roughFile.write("\n")
-
-
 
     Total_account_balance_arr.append(profit*76)
     percentage_levels_arr.append(percentage_levels)
